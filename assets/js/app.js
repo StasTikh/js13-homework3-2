@@ -28,8 +28,7 @@ function annuityCalc() {
             monthPay = amount;
         }
         let bodyPart = to2(monthPay - (amount * mRate));
-        let monthRate = mRate * 1;
-        let percentPay = to2(amount * monthRate);
+        let percentPay = to2(amount * mRate);
         amount = to2(amount - bodyPart);
         console.log(`Body: ${amount}, Body payment: ${bodyPart}, Rate payment: ${percentPay}, Monthly payment: ${monthPay}`)
         
